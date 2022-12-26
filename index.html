@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="big-container">
+        <div class="tip-container">
+            <section class="form-container">
+                <h4>Bill</h4>
+                <div>
+                    <input type="number" placeholder="0" id="bill-amount-field">
+                </div>
+                <h4>Select Tip %</h4>
+                <div class="btn-container">
+                    <button class="btns" id="tip5" value="5">5%</button>
+                    <button class="btns" id="tip10" value="10">10%</button>
+                    <button class="btns" id="tip15" value="15">15%</button>
+                    <button class="btns" id="tip25" value="25">25%</button>
+                    <button class="btns" id="tip50" value="50">50%</button>
+                    <button class="btns" disabled>Custom</button>
+                </div>
+                <h4>Number of People</h4>
+                <div>
+                    <input type="number" placeholder="0" id="total-persons-field">
+                </div>
+            </section>
+            <section class="display-container">
+                <div class="amount-display">
+                    <div>
+                        <h4>Tip</h4>
+                        <h5>per person</h5>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="0" id="total-tip-field" value="0">
+                    </div>
+                </div>
+                <div class="amount-display">
+                    <div>
+                        <h4>Total</h4>
+                        <h5>per person</h5>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="0" id="total-amount-field">
+                    </div>
+                </div>
+                <button id="reset-btn">RESET</button>
+            </section>
+        </div>
+    </div>
+    <script src="./assets/scripts.js"></script>
+</body>
+
+</html>
